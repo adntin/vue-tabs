@@ -15,25 +15,25 @@ const items = ref([
   {
     id: '1',
     name: '工作台',
-    icon: '',
+    icon: 'https://devimpfile.lexikos.com/dev/-1/png/pub_9ae9f6c60e214bdfab98f7248ffeeb26.png',
     path: '/Workbench',
   },
   {
     id: '2',
     name: '应用中心',
-    icon: '',
+    icon: 'https://devimpfile.lexikos.com/dev/-1/png/pub_5d30f0c541c0458fa41ce3926df1648e.png',
     path: '/ApplicationCenter',
   },
   {
     id: '3',
     name: '数据中心',
-    icon: '',
+    icon: 'https://devimpfile.lexikos.com/dev/-1/png/pub_28eb9b2bbbf8475fbb2ee85d8d8735af.png',
     path: '/DataCenter',
   },
   {
     id: '4',
     name: '组织中心',
-    icon: '',
+    icon: 'https://devimpfile.lexikos.com/dev/-1/png/d25f880bd2ed4bddbef05e0288dc80e1.png',
     path: '/OrganizationCenter',
   },
 ]);
