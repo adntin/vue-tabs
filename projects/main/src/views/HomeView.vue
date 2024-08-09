@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import EnumLayout from '@/enums/EnumLayout';
+import LoadingComponent from '@/components/LoadingComponent.vue';
+import LayoutView from './LayoutView.vue';
+
+const layout = EnumLayout.horizontal;
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <LayoutView v-if="layout" :layout="layout"></LayoutView>
+  <LoadingComponent v-else />
 </template>

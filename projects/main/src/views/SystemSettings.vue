@@ -1,0 +1,1 @@
+<template>SystemCenter</template>
