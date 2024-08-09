@@ -1,0 +1,12 @@
+{
+  // 保存的时候自动格式化
+  "editor.formatOnSave": true,
+  // 开启自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  // 默认格式化工具选择 prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": ["VITE"]
+}
