@@ -1,6 +1,6 @@
 enum EnumLayout {
-  horizontal = 'horizontal',
-  vertical = 'vertical',
+  Horizontal = 'horizontal',
+  Vertical = 'vertical',
 }
 
 export default EnumLayout;

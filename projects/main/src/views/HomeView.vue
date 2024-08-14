@@ -3,7 +3,7 @@ import EnumLayout from '@/enums/EnumLayout';
 import LoadingComponent from '@/components/LoadingComponent.vue';
 import LayoutView from './LayoutView.vue';
 
-const layout = EnumLayout.vertical;
+const layout = EnumLayout.Horizontal;
 </script>
 
 <template>

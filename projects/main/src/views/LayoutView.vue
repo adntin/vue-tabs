@@ -5,6 +5,8 @@ import EnumLayout from '@/enums/EnumLayout';
 import LayoutContentTabs from './LayoutContentTabs.vue';
 import LayoutContentApps from './LayoutContentApps.vue';
 import useWatchFullPathForAppTabStore from '@/hooks/useWatchFullPathForAppTabStore';
+import LayoutHeaderLeft from './LayoutHeaderLeft.vue';
+import LayoutHeaderRight from './LayoutHeaderRight.vue';
 
 const props = defineProps<{ layout: EnumLayout }>();
 
@@ -16,11 +18,13 @@ useWatchFullPathForAppTabStore();
 <template>
   <Layout class="layout">
     <LayoutHeader>
-      <NavBarView v-if="props.layout === EnumLayout.horizontal" :layout="EnumLayout.horizontal" />
+      <LayoutHeaderLeft />
+      <LayoutHeaderRight />
+      <NavBarView v-if="props.layout === EnumLayout.Horizontal" :layout="EnumLayout.Horizontal" />
     </LayoutHeader>
     <Layout>
-      <LayoutSider v-if="props.layout === EnumLayout.vertical" theme="light" width="90" class="layout-sider">
-        <NavBarView :layout="EnumLayout.vertical" />
+      <LayoutSider v-if="props.layout === EnumLayout.Vertical" theme="light" width="90" class="layout-sider">
+        <NavBarView :layout="EnumLayout.Vertical" />
       </LayoutSider>
       <LayoutContent>
         <LayoutContentTabs />
