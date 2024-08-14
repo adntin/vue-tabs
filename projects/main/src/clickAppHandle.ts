@@ -84,7 +84,7 @@ const clickAppHandle = async (app: Application, router: Router) => {
     appPath = appPath.replace('${REFRESH_TOKEN}', refreshToken.value!);
   }
   // 8. 浏览器新标签 (校园安全智脑)
-  if (app.target === ApplicationTarget.blank || appPath.startsWith('http')) {
+  if (app.target === ApplicationTarget.Blank || appPath.startsWith('http')) {
     window.open(appPath);
     return;
   }
