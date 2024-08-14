@@ -1,12 +1,16 @@
 <script lang="ts" setup>
-import { RouterView } from 'vue-router';
 import { theme, Layout, LayoutHeader, LayoutContent, LayoutSider } from 'ant-design-vue';
 import NavBarView from './NavBarView.vue';
 import EnumLayout from '@/enums/EnumLayout';
+import LayoutContentTabs from './LayoutContentTabs.vue';
+import LayoutContentApps from './LayoutContentApps.vue';
+import useWatchFullPathForAppTabStore from '@/hooks/useWatchFullPathForAppTabStore';
 
 const props = defineProps<{ layout: EnumLayout }>();
 
 const { token } = theme.useToken();
+
+useWatchFullPathForAppTabStore();
 </script>
 
 <template>
@@ -19,7 +23,8 @@ const { token } = theme.useToken();
         <NavBarView :layout="EnumLayout.vertical" />
       </LayoutSider>
       <LayoutContent>
-        <RouterView />
+        <LayoutContentTabs />
+        <LayoutContentApps />
       </LayoutContent>
     </Layout>
   </Layout>
@@ -57,7 +62,7 @@ const { token } = theme.useToken();
     :deep(.layout-apps) {
       margin: 0;
       background-color: transparent;
-      .single-app {
+      .alone-app {
         padding: 16px;
       }
     }

@@ -8,5 +8,5 @@
   },
   // 默认格式化工具选择 prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["pinia", "Sider", "VITE"]
+  "cSpell.words": ["Lowcode", "pinia", "Qiankun", "Sider", "unref", "VITE", "Wujie"]
 }
