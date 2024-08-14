@@ -60,7 +60,7 @@ watch(
 <template>
   <Menu v-model:selectedKeys="selectedKeys" :mode="mode" @click="handleMenuClick">
     <MenuItem v-for="app in navigationData" :key="app.id">
-      <template #icon v-if="mode === EnumLayout.vertical">
+      <template #icon v-if="mode === EnumLayout.Vertical">
         <img :src="app.icon" width="36" height="36" />
       </template>
       <div>{{ app.name }}</div>
